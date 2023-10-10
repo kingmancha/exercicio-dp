@@ -1,0 +1,124 @@
+body {
+    font-family: 'Gabarito', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    color: #ecf0f1;
+    font-size: 18px;
+}
+
+header nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.section-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+}
+
+.column img {
+    height: 380px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+}
+
+.product button {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container-image img {
+        max-width: 90%;
+        margin-right: 0;
+    }
+
+    .section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container-image img {
+        max-width: 90%;
+        margin-right: 0;
+    }
+
+    .section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        width: 80%;
+        margin: 10px 0;
+    }
+}
+
+
+
